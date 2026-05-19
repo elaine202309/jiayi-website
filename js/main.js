@@ -110,6 +110,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
+  // ===== Effect Image Detection =====
+  document.querySelectorAll('.img-hover').forEach(img => {
+    img.addEventListener('load', () => {
+      img.closest('.product-image').classList.add('has-effect');
+    });
+    // If already loaded from cache
+    if (img.complete && img.naturalWidth > 0) {
+      img.closest('.product-image').classList.add('has-effect');
+    }
+  });
+
   // ===== Contact Form =====
   const contactForm = document.querySelector('.contact-form form');
   if (contactForm) {
