@@ -775,18 +775,14 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   line-height: 1.6;
 }
 
-.btn-learn-more {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  transition: color 0.2s, transform 0.2s;
+.products-cta {
+  text-align: center;
+  padding: 40px 0 0;
 }
 
-.btn-learn-more:hover {
-  color: var(--color-primary-light);
-  transform: translateX(3px);
+.products-cta p {
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
 }
 
 /* ===== Product Modal ===== */
