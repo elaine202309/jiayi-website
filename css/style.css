@@ -484,6 +484,16 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   object-fit: cover;
 }
 
+.about-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
 .about-image::before {
   content: '';
   position: absolute;
